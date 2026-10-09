@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #111;
+    font-family: sans-serif;
+}
+
+#canvas-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ui-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.menu-container {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    border: 2px solid #4CAF50;
+    min-width: 300px;
+}
+
+.menu-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8BC34A;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: white;
+}
+
+#top-bar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+#joystick-zone {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    z-index: 5;
+}
+
+#joystick-stick {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+}
+
+#action-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hud-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(76, 175, 80, 0.8);
+    color: white;
+    border: 2px solid white;
+    font-size: 12px;
+    font-weight: bold;
+}
